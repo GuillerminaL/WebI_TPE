@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>PLG Encuesta</title>
+</head>
+
+
+<body>
+
+    <!------------------------------REEMPLAZO HEADER---------------------------->
+    <header>
+        <a href="../index.html"><img id="logo" src="../images/logo.png" alt="logo"></a>
+        <div>
+            <div class="boton btn_menu"><a><img class="img-menu" src="../images/img-menu.png" alt="Menú"></a></div>
+            <ul class="navegador">
+                <li class="boton"><a href="../index.html">Home</a></li>
+                <li class="boton"><a href="plg1.html">Primer año</a></li>
+                <li class="boton"><a href="formulario.html">Encuesta de accesibilidad</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!---------------------------------------------------------------------------->
+
+
+    <div class="cuerpo">
+        <section class="contenido">
+            <div class="titulo">
+                <h1>Encuesta de accesibilidad</h1>
+            </div>
+            <div class="formulario">
+                <form>
+                    <p><span id="respuesta"></span> </p>
+                    <div class="seccionformulario">
+                        <p>Completá tus datos personales y de contacto:</p>
+                        <div>
+                            <div class="item-formulario">
+                                <div class="item-form-izq">
+                                    <label for="nombre">*Nombre:</label>
+                                </div>
+                                <div class="item-form-der">
+                                    <input id="nombre" type="text" name="nombre" placeholder="" value="" />
+                                    <div class="form-error" id="error-nombre">
+                                        "Nombre" es un campo obligatorio.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-formulario">
+                                <div class="item-form-izq">
+                                    <label for="apellido">*Apellido:</label>
+                                </div>
+                                <div class="item-form-der">
+                                    <input type="text" name="apellido" id="apellido" placeholder="" value="" />
+                                    <div class="form-error" id="error-apellido">
+                                        "Apellido" es un campo obligatorio.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-formulario">
+                                <div class="item-form-izq">
+                                    <label for="nacimiento">Fecha de nacimiento:</label>
+                                </div>
+                                <div class="item-form-der">
+                                    <input type="date" name="nacimiento" placeholder="" value="" />
+                                </div>
+                            </div>
+
+                            <div class="item-formulario">
+                                <div class="item-form-izq">
+                                    <label for="telefono">*Tel&eacute;fono:</label>
+                                </div>
+                                <div class="item-form-der">
+                                    <input type="text" name="tel" id="tel" placeholder="" value="" />
+                                    <div class="form-error" id="error-tel">
+                                        "Tel&eacute;fono" es un campo obligatorio.
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item-formulario">
+                                <div class="item-form-izq">
+                                    <label for="email">*Email:</label>
+                                </div>
+                                <div class="item-form-der">
+                                    <input type="email" name="email" id="email" placeholder="" value="" />
+                                    <div class="form-error" id="error-email">
+                                        "Email" es un campo obligatorio.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="seccionformulario">
+                        <p>Contanos sobre el acceso a internet en tu hogar...</p>
+                        <div class="conexionainternet">
+                            <div class="item-formulario item-formulario-conexion">
+                                <div class="item-form-izq">
+                                    <label for="email">¿Tienen conexión a internet?:</label>
+                                </div>
+                                <div class="item-form-der">
+                                    <div class="item-form-radio">
+                                        <label for="si">Sí</label>
+                                        <input id="conexionSi" type="radio" name="conexion" value="si" />
+                                    </div>
+
+                                    <div class="item-form-radio">
+                                        <label for="no">No</label>
+                                        <input id="conexionNo" type="radio" name="conexion" value="no" checked />
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item-formulario item-formulario-conexion noShow" id="conectionType">
+                                <div class="item-form-izq">
+                                    <label for="email">¿De qué tipo?:</label>
+                                </div>
+                                <div class="item-form-der">
+                                    <div class="item-form-radio">
+                                        <label for="wif">wifi</label>
+                                        <input type="checkbox" name="tipoConexion" value="wifi" />
+                                    </div>
+
+                                    <div class="item-form-radio">
+                                        <label for="datos">datos</label>
+                                        <input type="checkbox" name="tipoConexion" value="datos" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="seccionformulario">
+                        <p>¿Disponés de alguno de los siguientes dispositivos para realizar
+                            videollamadas y tareas escolares desde tu casa?:</p>
+                        <div class="item-formulario">
+                            <label for="pcdeescritorio">PC de escritorio</label>
+                            <input type="checkbox" name="dispositivos" id="pcdeescritorio" />
+                            <label for="pcportatil">PC portátil</label>
+                            <input type="checkbox" name="dispositivos" id="pcportatil" />
+                            <label for="telefonocelular">Teléfono celular</label>
+                            <input type="checkbox" name="dispositivos" id="movil" />
+                        </div>
+                    </div>
+
+                    <div class="seccionformulario">
+                        <p>Contanos sobre tu experiencia con la virtualidad..</p>
+                        <div class="item-formulario texto">
+                            <div class="titulo">
+                                <label for="expvirtualidad">¿Cómo fue estudiar el año pasado desde casa?</label>
+                            </div>
+                            <textarea name="comentario" rows="10" cols="45">...</textarea>
+                        </div>
+                    </div>
+
+                    <div class="captcha">
+                        <div>
+                            <img id="imgCaptcha" src="../images/CAPTCHA/ok.png" alt="captcha">
+                        </div>
+                        <input id="txtCaptcha" type="text" name="capt" placeholder="Ingrese captcha">
+                        <p><span id="respuestaC"></span> </p>
+
+                    </div>
+
+                    <div class="seccionformulario">
+                        <button id="btnEnvio">ENVIAR</button>
+                    </div>
+                </form>
+            </div>
+            <p id="gxFormulario"></p>
+        </section>
+
+        <aside>
+            <div class="cuadroAnexo">
+                <h2>Objetivos de esta encuesta</h2>
+                <p>La pandemia obligó a replantear el esquema de enseñanza. <span class="inlinebold">La modalidad
+                    online, ¿llegó para quedarse?</span></p>
+                <p>La pandemia del coronavirus obligó a <span class="inlineitalic">readecuar las estrategias de
+                    enseñanza. </span>Los docentes tuvieron que incorporar en forma acelerada el manejo de
+                    tecnologías y el modelo escolar clásico entró en revisión. Pero...<span
+                    class="inlineitalic destacado">los que saben son los protagonistas, <span class="inlinebold">los
+                    niños y jóvenes.</span></span></p>
+                <h3>Cuatro claves</h3>
+                <p>Mariana Maggio es doctora en Educación y una comunicadora estrella de Instagram. Con sus
+                    historias, alienta a docentes que necesitan orientación y la llenan de preguntas, comparte
+                    herramientas con “alumnos, alumnas y alumnes” y advierte que este tiempo de transición es tan
+                    delicado que una prioridad pasó a ser <span class="inlineitalic">no perder a ningún estudiante
+                    por el camino</span>.</p>
+                <div>
+                    <p>En medio de esta “crisis/oportunidad”, los objetivos son: </p>
+                    <ul class="objform destacado">
+                        <li>Reinventar la clase</li>
+                        <li>Horarios flexibles</li>
+                        <li>Mantener la humanización</li>
+                        <li>Inclusión digital</li>
+                    </ul>
+                </div>
+                <p>Dichas claves son los objetivos fundamentales de este formulario que busca
+                    <span class="inlineitalic">tender un puente entre pantallas.</span>
+                <p class="frase">"Una pantalla difícilmente cambie la vida de una persona... Otro ser
+                    humano sí puede hacerlo”</p>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        <div class="titulo">
+            <p>Escuela de Educación Artística Nº 22 <span class="inlineitalic"> "Leonardo Da Vinci" </span></p>
+        </div>
+        <div>
+            <p>Contacto</p>
+            <ul>
+                <li>Dirección: Av. Corrientes 3021 CABA</li>
+                <li>Teléfono: 11 5032-0076</li>
+                <li>Email: contacto@davinci.edu.ar</li>
+            </ul>
+        </div>
+        <div>
+            <p>Departamento de alumnos</p>
+            <ul>
+                <li>Horarios: Lunes a Viernes de 10 a 18 hs.</li>
+                <li>Teléfono: 11 5032-0055</li>
+                <li>Email: secretaria@davinci.edu.ar</li>
+            </ul>
+        </div>
+        <div>
+            <p>Docente a cargo</p>
+            <ul>
+                <li>Nombre: Prof. Evangelina Zaliguieri</li>
+                <li>Teléfono: 11 5032-0057</li>
+                <li>Email: prof.zaliguieriplg@davinci.edu.ar</li>
+            </ul>
+        </div>
+    </footer>
+
+    <!---------------------------------AGREGO JS MENU REPONSIVE---------------------------->
+    <script src="../js/msjencuesta.js"></script>
+    <script src="../js/menu.js"></script>
+    
+</body>
+
+</html>

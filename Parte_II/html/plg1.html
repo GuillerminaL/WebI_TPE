@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>PLG 1º AÑO ESB</title>
+</head>
+
+<body>
+
+    <!------------------------------HEADER---------------------------->
+    <header>
+        <a href="../index.html"><img id="logo" src="../images/logo.png" alt="logo"></a>
+        <div>
+            <div class="boton btn_menu"><a><img class="img-menu" src="../images/img-menu.png" alt="Menú"></a></div>
+            <ul class="navegador">
+                <li class="boton"><a href="../index.html">Home</a></li>
+                <li class="boton"><a href="plg1.html">Primer año</a></li>
+                <li class="boton"><a href="formulario.html">Encuesta de accesibilidad</a></li>
+            </ul>
+        </div>
+    </header>
+    <!---------------------------------------------------------------------------->
+    <div class="cuerpo">
+        <section class="contenido" id="bckgPLG">
+            <div class="objetivos">
+                <div class="titulo">
+                    <h1>Objetivos para este Primer Año de PLG</h1>
+                </div>
+
+                <p>Se espera que al finalizar el ciclo los alumnos/as:</p>
+                <ul>
+                    <li>Comprendan y produzcan variedad de textos, teniendo en cuenta los patrones
+                        que los organizan y sus contextos de producción y recepción.</li>
+                    <li>Utilicen todos los conocimientos gramaticales, normativos y ortográficos en
+                        función de la optimización de sus prácticas sociales del lenguaje.</li>
+                    <li>Ejerzan sobre sus producciones e interpretaciones una tarea de monitoreo y
+                        control constantes.</li>
+                    <li>Entiendan la lectura como actividad gratificante y placentera, como vía de
+                        acceso al conocimiento y como forma de ampliar y dar sentido a la experiencia personal.</li>
+                    <li>Conozcan, analicen y valoren el lenguaje literario de diferentes géneros,
+                        autores, épocas y culturas.</li>
+                    <li>Participen de experiencias sociales vinculadas con la literatura, estimándolas
+                        como posibilidad de apropiarse del patrimonio cultural.</li>
+                    <li>Usen el lenguaje de manera reflexiva para aprender, organizar el pensamiento y
+                        elaborar su discurso.</li>
+                    <li>Obtengan, seleccionen y se posicionen críticamente frente a la información para lograr múltiples
+                        propósitos, utilizando todos los recursos que estén a su alcance.</li>
+                    <li>Den cuenta de lo aprendido, tanto en forma oral como escrita.</li>
+                </ul>
+            </div>
+            <div class="cronograma">
+                <div class="titulo">
+                    <h2>Cronograma 2021</h2>
+                </div>
+                <div class="formulario">
+                    <form id="formCrono">
+                        <div class="seccionformulario">
+                            <div class="item-formulario">
+                                <div class="item-form-izq">
+                                    <label for="fecha">FECHA:</label>
+                                </div>
+                                <div class="item-form-der">
+                                    <input type="date" name="fecha" placeholder="" value="" />
+                                </div>
+                            </div>
+
+                            <div class="item-formulario">
+                                <div class="item-form-izq">
+                                    <label for="modulo">MODULO:</label>
+                                </div>
+                                <div class="item-form-der">
+                                    <input type="number" min=1 name="modulo" placeholder="" value="" />
+                                </div>
+                            </div>
+
+                            <div class="item-formulario">
+                                <div class="item-form-izq">
+                                    <label for="temario">TEMA:</label>
+                                </div>
+                                <div class="item-form-der">
+                                    <input type="text" name="temario" placeholder="" value="" />
+                                </div>
+                            </div>
+
+                            <div class="item-formulario">
+                                <div class="item-form-izq">
+                                    <label for="tp">TRABAJO PRACTICO:</label>
+                                </div>
+                                <div class="item-form-der">
+                                    <div class="item-form-radio">
+                                        <label for="si">SI</label>
+                                        <input id="tp" type="radio" name="tp" value="si" checked />
+                                    </div>
+                                    <div class="item-form-radio">
+                                        <label for="no">NO</label>
+                                        <input id="tp" type="radio" name="tp" value="no" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button id="btnSend">ENVIAR</button>
+                        <button id="btnSendx3">REPETIR 3 VECES</button>
+
+                    </form>
+                </div>
+                <table class="tabla">
+                </table>
+                <button id="eliminar">VACIAR TABLA</button>
+            </div>
+        </section>
+
+        <aside>
+            <div class="cuadroAnexo">
+                <h2>Recorridos de lectura</h2>
+                <p>Te recomendamos algunas maneras de llevar las posibles lecturas Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Praesentium eaque ipsa sint commodi officia ipsum, placeat assumenda
+                    magni atque vero quae repudiandae blanditiis cum hic ducimus at reiciendis non. Provident? La
+                    pandemia obligó a replantear el esquema de enseñanza. <span class="inlinebold">Autor, género o
+                    cosmovisión, ¿Te interesa alguna propuesta?</span></p>
+                <div>
+                    <h3>Leer siguiendo a un autor</h3>
+                    <ul>
+                        <li>Jorge Luis Borges</li>
+                        <li>Edgar Allan Poe</li>
+                        <li>Gabriel García Márquez</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Leer siguiendo a un género</h3>
+                    <ul>
+                        <li>Narrativo</li>
+                        <li>Dramático</li>
+                        <li>Lírico</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Leer siguiendo una cosmovisión</h3>
+                    <ul>
+                        <li>Realista</li>
+                        <li>Fantástica</li>
+                        <li>Ciencia Ficción</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="titulo">
+            <p>Escuela de Educación Artística Nº 22 <span class="inlineitalic"> "Leonardo Da Vinci" </span></p>
+        </div>
+        <div>
+            <p>Contacto</p>
+            <ul>
+                <li>Dirección: Av. Corrientes 3021 CABA</li>
+                <li>Teléfono: 11 5032-0076</li>
+                <li>Email: contacto@davinci.edu.ar</li>
+            </ul>
+        </div>
+        <div>
+            <p>Departamento de alumnos</p>
+            <ul>
+                <li>Horarios: Lunes a Viernes de 10 a 18 hs.</li>
+                <li>Teléfono: 11 5032-0055</li>
+                <li>Email: secretaria@davinci.edu.ar</li>
+            </ul>
+        </div>
+        <div>
+            <p>Docente a cargo</p>
+            <ul>
+                <li>Nombre: Prof. Evangelina Zaliguieri</li>
+                <li>Teléfono: 11 5032-0057</li>
+                <li>Email: prof.zaliguieriplg@davinci.edu.ar</li>
+            </ul>
+        </div>
+    </footer>
+
+    <!---------------------------------AGREGO JS MENU REPONSIVE---------------------------->
+    <script src="../js/menu.js"></script>
+    <script src="../js/tabla.js"></script>
+
+
+</body>
+
+</html>
