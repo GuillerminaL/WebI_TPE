@@ -1,0 +1,642 @@
+/*------------------------------------------------------------------------------*/
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    text-align: justify;
+    font-size: 1em;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+header,
+footer,
+.cuerpo,
+.contenido,
+.cronograma,
+.tapa,
+.conexionainternet {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.electivo,
+.seccionformulario,
+.derecha,
+.cuadroAnexo {
+    background-color: rgb(248, 248, 248);
+}
+
+header,
+.navegador,
+.cuerpo {
+    background-color: white;
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------HEADER----------------------*/
+
+header {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+}
+
+#logo {
+    height: 2.5em;
+    margin: 1em 0em 1em 0.5em;
+}
+
+.navegador {
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+}
+
+.boton {
+    /* MODIFICA EL CUADRO DEL LINK */
+    padding: 1em;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.boton:hover {
+    background-color: rgb(226, 220, 215);
+}
+
+.boton a {
+    /* MODIFICA EL TEXTO DEL LINK */
+    font-size: 1.1em;
+    color: slategrey;
+    font-weight: bolder;
+}
+
+
+/*------------------------------ AGREGO MENU RESPONSIVE-------------------------*/
+
+.img-menu {
+    height: 2em;
+    justify-content: end;
+}
+
+ul.navegador {
+    flex-direction: column;
+    text-align: end;
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 5000;
+}
+
+ul.navegador.show {
+    display: flex;
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------CUERPO----------------------*/
+
+.cuerpo {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 4.5em;
+}
+
+.contenido,
+.main {
+    width: 100%;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    background-size: 100%;
+    background-image: url(images/fondoindex.jpg);
+    background-repeat: repeat;
+}
+
+.titulo {
+    width: 100%;
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------FOOTER----------------------*/
+
+footer {
+    background-color: rgb(202, 202, 202);
+    padding: 1%;
+    justify-content: center;
+}
+
+footer li {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer ul {
+    padding: 0%;
+}
+
+footer p {
+    font-weight: bold;
+    text-align: center;
+}
+
+footer .titulo {
+    font-size: 1.5em;
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------HOME - RECOMEND  -----------*/
+
+.recomendacion {
+    width: 95%;
+    margin: 1.5%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.recomendacion:hover {
+    background-color: rgba(221, 221, 221, 0.9);
+}
+
+
+/*------- recomendacion tapa -------*/
+
+.tapa {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start
+}
+
+.recomendacion img {
+    width: 90%;
+    margin-top: 13%;
+}
+
+
+/*-------recomendacion texto -------*/
+
+.textos {
+    width: 60%;
+}
+
+.recomendacion p {
+    padding: 0% 8%;
+    color: rgb(51, 51, 51);
+}
+
+.recomendacion .titulo {
+    font-size: 0.9em;
+    width: auto;
+    font-weight: bolder;
+}
+
+.recomendacion .autor {
+    font-size: 0.8em;
+}
+
+.recomendacion .resumen {
+    font-size: 0.7em;
+    /*padding: 5% 10%;*/
+    text-indent: 5%;
+}
+
+.recomendacion a p {
+    font-size: 0.8em;
+    text-align: right;
+    font-weight: bolder;
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------ANEXO DERECHA---------------*/
+
+aside {
+    width: 100%;
+    line-height: 2em;
+    font-size: 0.9em;
+}
+
+aside p {
+    text-indent: 1.5em;
+}
+
+.cuadroAnexo {
+    /*width: 86%;*/
+    padding: 8%;
+    margin: 2% 0%;
+}
+
+.cuadroAnexo li {
+    padding: 0%;
+}
+
+.cuadroAnexo ul {
+    padding: 2% 5% 2% 5%;
+}
+
+.cuadroAnexo p::first-letter {
+    font-size: 1.3em;
+}
+
+.resaltar {
+    background-color: rgb(146, 146, 146);
+    color: white;
+    font-style: italic;
+}
+
+ul.objform {
+    list-style-type: square;
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------CRONOGRAMA+OBJ---------------*/
+
+.objetivos {
+    margin: 0% 7%;
+    background-color: rgba(250, 250, 250, 0.5);
+}
+
+.objetivos .titulo {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.objetivos li {
+    list-style: square;
+    line-height: 2em;
+    padding-top: 2%;
+}
+
+.cronograma {
+    justify-content: center;
+    /* padding: 0% 5%;*/
+    background-color: rgba(250, 250, 250, 0.5);
+}
+
+.cronograma .formulario,
+.cronograma form {
+    width: 90%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.noWrap {
+    white-space: nowrap;
+}
+
+.tabla {
+    font-size: 0.7em;
+    width: 90%;
+    margin: 2% 0%;
+}
+
+.tabla .resaltar {
+    background-color: rgba(184, 182, 182, 0.8);
+}
+
+.tabla tr, .tabla th {
+    padding: 0%;
+}
+
+th {
+    background-color: rgb(157, 165, 165);
+    color: rgb(61, 61, 61);
+}
+
+/*------------------------------*/
+td, th {
+    text-align: center;
+    border: 1px solid #6b2e2e;
+    /*padding: 0px 15px 5px 15px;*/
+    text-transform: uppercase;
+    background-color: rgba(248, 248, 248, 0.4);
+    /*------*/
+    padding: 0em 0.18em 0.09em 0.18em;
+    font-size: 0.9em;
+}
+
+input, select {
+    padding: 0em 0.18em 0.09em 0.18em;
+    font-size: 0.9em;
+}
+
+input.number {
+    width: 35%;
+}
+
+input.date {
+    width: 82%;
+}
+
+input.text {
+    width: 70%;
+}
+
+#msg{
+    background-color: rgba(70, 52, 52, 0.6);    
+    position:  fixed;        
+    z-index: 5000;
+    right: 0;
+    bottom: 0;  
+    color: white; 
+    padding: 0% 4%;
+}
+
+/*-----------------------------*/
+
+
+.popUp {
+    background-color: rgba(255, 255, 255, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 5000;
+    width: 80%;
+    font-size: 0.8em;
+}
+
+
+/*------------------------------*/
+
+.btn-tabla {
+    width: 0.9em; 
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.celda-btn-tabla {
+    width: 1em;  
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.botonera-tabla {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+
+/*----------------------------------------------FORMULARIO*/
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin: 4% 0%;
+    padding: 0%;
+}
+
+.seccionformulario {
+    width: 100%;
+    background-color: rgba(248, 248, 248, 0.7);
+    padding: 1%;
+}
+
+form {
+    width: 90%;
+    padding: 0% 3%;
+    text-align: center;
+}
+
+form div {
+    box-sizing: border-box;
+}
+
+.item-formulario {
+    width: 94%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-formulario.texto {
+    flex-direction: column;
+}
+
+.item-form-izq {
+    width: 30%;
+    text-align: right;
+    display: inline;
+}
+
+.item-form-der {
+    width: 65%;
+    text-align: left;
+    padding-left: 5%;
+    display: inline;
+}
+
+.noShow {
+    display: none;
+}
+
+.form-error {
+    color: red;
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+}
+
+#respuesta,
+#respuestaC {
+    color: red;
+}
+
+.item-form-radio {
+    display: inline-flex;
+}
+
+.conexionainternet {
+    justify-content: space-around;
+}
+
+.conexionainternet .item-form-izq,
+.conexionainternet .item-form-der {
+    width: 50%;
+}
+
+form p,
+.inlinebold {
+    font-weight: bolder;
+}
+
+form p,
+.inlineitalic {
+    font-style: italic;
+}
+
+.frase {
+    text-align: center;
+    line-height: 30.5px;
+    color: rgb(19, 151, 151);
+    font-variant: small-caps;
+}
+
+
+/*----------------------------------------------  MEDIA QUERY  ----------------------------*/
+
+
+/*----------------------------------------------  MEDIA QUERY  ----------------------------*/
+
+
+/*----------------------------------------------  MEDIA QUERY  ----------------------------*/
+
+
+
+@media screen and (min-width: 660px) {
+    /*--------------------------------------------   GRID   -------------------------------*/
+    .cuerpo {
+        display: grid;
+        grid-template-columns: 3fr 1.5fr;
+        grid-template-rows: auto;
+        grid-template-areas: "header header" "section aside" "footer footer";
+    }
+    header {
+        grid-area: header;
+    }
+    section {
+        grid-area: section;
+    }
+    aside {
+        grid-area: aside;
+    }
+    footer {
+        grid-area: footer;
+        justify-content: space-evenly;
+    }
+    /*---------------------------------------------------------------------------*/
+    .main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    /*------------------------------------------   HOME   ----------------------*/
+    /*------------------recomenddaciones*/
+    .recomendacion .titulo,
+    .recomendacion .autor {
+        display: none;
+    }
+    .recomendacion {
+        width: 45%;
+    }
+    .recomendacion p {
+        margin: 0.5em;
+    }
+    .tapa,
+    .textos {
+        width: 100%;
+    }
+    .recomendacion .resumen {
+        font-size: 0.8em;
+    }
+    /*---------------------------------------------CRONOGRAMA+OBJ---------------*/
+    .cronograma .formulario {
+        padding: 0% 5%;
+        width: 90%;
+    }
+    .objetivos {
+        margin: 0% 15%;
+    }
+    .tabla {
+        margin: 2% 0%;
+    }
+    /*---------------------------------------------formulario*/
+    .item-form-izq {
+        width: 35%;
+    }
+    .item-form-der {
+        width: 65%;
+    }
+    
+    
+    /*------------------*/
+    .tabla-container { 
+        width: 82%;
+    }
+    th, td {
+        padding: 0px 15px 5px 15px;
+        font-size: 1em;
+    }
+    .tabla {
+        font-size: 0.8em;
+        width: 100%;
+        margin: 2% 0%;
+    }
+    .btn-tabla {
+        width: 20px;
+        
+    }
+    .celda-btn-tabla {
+        width: 15px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .popUp {
+        width: 50%;
+        font-size: 0.9em;
+    }
+    input, select {
+        font-size: 1em;
+    }
+    
+    input.number {
+        width: 80%;
+    }
+    
+    input.date {
+        width: 100%;
+    }
+    
+    input.text {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /*------------------------------------------   HEADER   ----------------------*/
+    .btn_menu {
+        /* oculta el boton del menu */
+        display: none;
+    }
+    ul.navegador {
+        /* cambia la direccion del flex de columna a fila*/
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    header {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .recomendacion {
+        width: 30%;
+    }
+}

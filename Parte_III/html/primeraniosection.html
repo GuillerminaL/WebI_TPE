@@ -1,0 +1,106 @@
+<section class="contenido">
+    <div class="objetivos">
+        <div class="titulo">
+            <h1>Objetivos para este Primer Año de PLG</h1>
+        </div>
+
+        <p>Se espera que al finalizar el ciclo los alumnos/as:</p>
+        <ul>
+            <li>Comprendan y produzcan variedad de textos, teniendo en cuenta los patrones que los organizan y sus contextos de producción y recepción.</li>
+            <li>Utilicen todos los conocimientos gramaticales, normativos y ortográficos en función de la optimización de sus prácticas sociales del lenguaje.</li>
+            <li>Ejerzan sobre sus producciones e interpretaciones una tarea de monitoreo y control constantes.</li>
+            <li>Entiendan la lectura como actividad gratificante y placentera, como vía de acceso al conocimiento y como forma de ampliar y dar sentido a la experiencia personal.</li>
+            <li>Conozcan, analicen y valoren el lenguaje literario de diferentes géneros, autores, épocas y culturas.</li>
+            <li>Participen de experiencias sociales vinculadas con la literatura, estimándolas como posibilidad de apropiarse del patrimonio cultural.</li>
+            <li>Usen el lenguaje de manera reflexiva para aprender, organizar el pensamiento y elaborar su discurso.</li>
+            <li>Obtengan, seleccionen y se posicionen críticamente frente a la información para lograr múltiples propósitos, utilizando todos los recursos que estén a su alcance.</li>
+            <li>Den cuenta de lo aprendido, tanto en forma oral como escrita.</li>
+        </ul>
+    </div>
+    <div class="cronograma">
+        <div class="titulo">
+            <h2>Cronograma 2021</h2>
+        </div>
+        <div class="formulario">
+            <form id="formCrono">
+
+                <div class="botonera-tabla">
+                    <button id="agregar"><img class="btn-tabla" src="images/BOTONES/agregar.png" alt="Crear Nuevo"></button>
+                    <button id="filtrar"><img class="btn-tabla" src="images/BOTONES/filtrar.png" alt="Filtrar"></button>
+                </div>
+
+                <div class="popUp">
+                    <div class="seccionformulario noShow">
+                        <div class="item-formulario">
+                            <div class="item-form-izq">
+                                <label for="fecha">FECHA:</label>
+                            </div>
+                            <div class="item-form-der">
+                                <input id="fecha" type="date" name="fecha" placeholder="" value="" />
+                            </div>
+                        </div>
+
+                        <div class="item-formulario">
+                            <div class="item-form-izq">
+                                <label for="modulo">MODULO:</label>
+                            </div>
+                            <div class="item-form-der">
+                                <input id="modulo" type="number" min=1 name="modulo" placeholder="" value="" />
+                            </div>
+                        </div>
+
+                        <div class="item-formulario">
+                            <div class="item-form-izq">
+                                <label for="temario">TEMA:</label>
+                            </div>
+                            <div class="item-form-der">
+                                <input id="tema" type="text" name="temario" placeholder="" value="" />
+                            </div>
+                        </div>
+                        
+                        <div class="item-formulario">
+                            <div class="item-form-izq">
+                                <label for="tp">TRABAJO PRACTICO:</label>
+                            </div>
+                            <div class="item-form-der">
+                                <div class="item-form-radio">
+                                    <label for="si">SI</label>
+                                    <input class="tp" type="radio" name="tp" value="si" checked />
+                                </div>
+                                <div class="item-form-radio">
+                                    <label for="no">NO</label>
+                                    <input class="tp" type="radio" name="tp" value="no" />
+                                </div>
+                                <div class="noShow" id="TPfiltro">
+                                    <label for="-"> N/A </label>
+                                    <input class="tp" type="radio" name="tp" value="-" />
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                        <div class="botonera-tabla-peque">
+                            <button id="btnSend" title="Enviar"><img class="btn-tabla" src="images/BOTONES/enviar.png" alt= "Enviar"></button>
+                            <button id="btnSendx3" title="Enviar 3 veces"><img class="btn-tabla" src="images/BOTONES/enviar3.png" alt= "Enviar 3 veces"></button>
+                            <button id="btnNoEnviar" title="No enviar"><img class="btn-tabla" src="images/BOTONES/cancelar.png" alt= "Cancelar Envio"></button>
+                            <button id="btnFiltrar" title="Filtrar"><img class="btn-tabla" src="images/BOTONES/aceptar.png" alt= "Filtrar"></button>
+                            <button id="btnNoFiltrar" title="No Filtrar"><img class="btn-tabla" src="images/BOTONES/cancelar.png " alt= "Cancelar filtro "></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="msg"> 
+
+                </div>
+
+
+            </form>
+        </div>
+        <div class="tabla-container">
+            <table class="tabla ">
+            </table>
+        </div>
+
+
+    </div>
+</section>
