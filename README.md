@@ -11,7 +11,7 @@ The project constains a responsive web page with use of HTML&CSS, Javascript, SP
 
 
 -----------------------------------------
-2022
+2021
 
 Final Project for
 *Web I* 
